@@ -1,1 +1,26 @@
-<!DOCTYPE html><html><head><title>NETHUM OFC Pair Site</title></head><body><h1>Pair Code Generator</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NETHUM OFC PAIR SITE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pair Your Bot</h1>
+    <p>Enter your number to generate a pairing code:</p>
+    <input type="text" id="number" placeholder="Enter your number" />
+    <button onclick="generateCode()">Generate Code</button>
+    <div id="result"></div>
+    <button id="copyBtn" onclick="copyCode()" style="display:none;">Copy Code</button>
+  </div>
+  <audio autoplay loop id="bg-audio">
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="toggleAudio()">Mute/Unmute</button>
+  <footer>Made by NETHUM OFC</footer>
+  <script src="script.js"></script>
+</body>
+</html>
